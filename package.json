@@ -1,12 +1,13 @@
 {
-  "name": "gcf-typescript-template",
-  "version": "1.0.1",
-  "description": "A template for Google Cloud Functions project that uses Typescript.",
+  "name": "coronicle",
+  "version": "0.0.1",
+  "description": "Functions for coronicle hackathon project",
   "repository": "golergka/gcf-typescript-template",
   "main": "dist/index.js",
+  "private": true,
   "scripts": {
-    "start": "npx tsc-watch --onSuccess 'npx @google-cloud/functions-framework --target=helloWorld'",
-    "deploy": "npx tsc && gcloud functions deploy helloWorld --runtime nodejs10 --trigger-http"
+    "start": "npx tsc-watch --onSuccess 'npx @google-cloud/functions-framework --target=helloWorldTs'",
+    "deploy": "npx tsc && gcloud functions deploy helloWorldTs --runtime nodejs10 --trigger-http"
   },
   "keywords": [
     "Typescript",
@@ -16,11 +17,12 @@
     "functions",
     "serverless"
   ],
-  "author": "Max Yankov aka golergka",
+  "author": "sebimarkgraf",
   "license": "MIT",
   "devDependencies": {
     "@google-cloud/functions-framework": "^1.1.2",
     "tsc-watch": "^2.2.1",
     "typescript": "^3.5.3"
-  }
+  },
+  "dependencies": {}
 }
